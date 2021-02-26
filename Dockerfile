@@ -270,7 +270,7 @@ RUN pip install --upgrade cython && \
     # Newer version crashes (latest = 1.14.0) when running tensorflow.
     # python -c "from google.cloud import bigquery; import tensorflow". This flow is common because bigquery is imported in kaggle_gcp.py
     # which is loaded at startup.
-    pip install google-cloud-bigquery==1.12.1 && \
+    pip install google-cloud-bigquery==2.2.0 && \
     pip install google-cloud-storage && \
     pip install google-cloud-translate==3.* && \
     pip install google-cloud-language==2.* && \
